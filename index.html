@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,13 @@
     <script src="javascript.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-
+                <img src="img/card-multiple.svg" height="50px" alt="Dashboard logo">
+                <h1>Dashboard</h1>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -29,16 +32,181 @@
             </ul>
         </div>
         <div class="header">
-            <div class="search"></div>
-            <div class="profile"></div>
-            <div class="greeting"></div>
-            <div class="project-buttons"></div>
+            <div class="search">
+                <img src="img/magnify.svg" id="search-icon" height="24px" alt="Search bar">
+                <div class="search-box">
+                    <input type="text" class="search-bar">
+                </div>
+            </div>
+            <div class="profile">
+                <div id="notification-bell"><a href="#"><img src="img/bell-ring.svg" alt="Notification bell"></a></div>
+                <div class="profile-pic"><a href="#"><img src="img/alpaca.png" class="profile-pic" alt="Profile picture"></a></div>
+                <h2>Jane Doe</h2>
+            </div>
+            <div class="greeting">
+                <img src="img/alpaca.png" class="profile-pic" alt="Profile picture">
+                <p>Hi there,</p>
+                <h1>Jane Doe (@jdoe)</h1>
+            </div>
+            <div class="create-buttons">
+                <button class="create">New</button>
+                <button class="create">Upload</button>
+                <button class="create">Share</button>
+            </div>
         </div>
         <div class="content">
-            <div class="projects"></div>
-            <div class="announcements"></div>
-            <div class="trending"></div>
+            <div class="projects">
+                <div class="title">
+                    <h2>Your Projects</h2>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab" style="background-color: #23c02b;"></div>
+                        <h3>Tech Project</h3>
+                        <p>Cras et mi tempus velit semper dictum vel vel elit.
+                        Ut dictum metus leo, eu maximus orci dignissim nec. Ut
+                        ultrices consectetur est, sed ultricies nisi pulvinar
+                        sed.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab"></div>
+                        <h3>Complex Project</h3>
+                        <p>Maecenas viverra consectetur libero et condimentum.
+                        Nam elementum ornare elementum. Proin a tempus est.
+                        Mauris quam urna, imperdiet blandit placerat at, semper
+                        sit amet nisi. Sed ac magna et mauris imperdiet molestie
+                        sed ut nisl.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab"></div>
+                        <h3>Simple Project</h3>
+                        <p>Quisque eu feugiat augue. Donec vitae eros sapien. Nunc scelerisque quam eu libero dapibus, malesuada dignissim augue rutrum.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab"></div>
+                        <h3>Collaborative Project</h3>
+                        <p>Etiam consectetur in mauris ut auctor. Pellentesque
+                        velit tortor, lobortis eget ullamcorper vel, dapibus vel
+                        nisl. Fusce iaculis ipsum vel mauris fringilla vehicula.
+                        Pellentesque ac pharetra mi. Aenean quam purus,
+                        sollicitudin et tincidunt nec, pellentesque non elit.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab"></div>
+                        <h3>Easy Project</h3>
+                        <p>Nullam in faucibus diam. Aenean dapibus bibendum dolor in gravida. Integer nec fermentum quam, ac viverra dolor.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-tab"></div>
+                        <h3>Hard Project</h3>
+                        <p>Nam tincidunt purus neque, ac fringilla arcu dictum ac. Morbi et odio et nulla dignissim venenatis. Nam euismod egestas sagittis.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><img src="img/star.svg" alt="Favorite this project"></a>
+                        <a href="#"><img src="img/eye.svg" alt="View Project"></a>
+                        <a href="#"><img src="img/transit-connection-variant.svg" alt="Project settings"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-sidebar">
+                <div class="announcements">
+                    <div class="title">
+                        <h2>Announcements</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Maintenance Update</h3>
+                        <p>Mauris quam urna, imperdiet blandit placerat at, semper sit
+                            amet nisi. Sed ac magna et mauris imperdiet molestie sed ut
+                            nisl. Mauris vitae malesuada eros. Curabitur pulvinar lorem
+                            nec ligula vehicula tincidunt.</p>
+                        <hr>
+                        <h3>Upcoming Events</h3>
+                        <p>Mauris fringilla lectus id erat sollicitudin, in
+                            fringilla dolor mattis. In blandit mattis est ac porta. Duis
+                            ultricies nec metus non porttitor. Cras eget diam eu neque
+                            laoreet feugiat.</p>
+                        <hr>
+                        <h3>Release 1.2 Notes</h3>
+                        <p>Quisque bibendum arcu a dictum suscipit. Maecenas
+                            facilisis nulla a magna euismod mattis. Pellentesque id
+                            dolor quis ante pharetra varius.</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="title">
+                        <h2>Trending</h2>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div class="trend-box">
+                                <img src="img/robot.png" height=60px alt="Profile picture">
+                                <p class="user-tag">@jax</p>
+                                <p class="project-name">GigaApp</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="trend-box">
+                                <img src="img/space_seal.png" height=60px alt="Profile picture">
+                                <p class="user-tag">@confusedius</p>
+                                <p class="project-name">Obtuse Application</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="trend-box">
+                                <img src="img/alpaca.png" height=60px alt="Profile picture">
+                                <p class="user-tag">@jdoe</p>
+                                <p class="project-name">Tech Project</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="trend-box">
+                                <img src="img/fox.png" height=60px alt="Profile picture">
+                                <p class="user-tag">@ffox</p>
+                                <p class="project-name">Fox Finder App</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
